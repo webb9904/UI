@@ -1,0 +1,5 @@
+<p>Recipient Summary</p>
+<app-recipient-search (searchString)="applyFilter($event)"></app-recipient-search>
+<app-recipient-table [data]="summary" [text]="searchString"></app-recipient-table>
+<br>
+<button (click)="AddUserData()" class="btn btn-primary">Click Me</button>
